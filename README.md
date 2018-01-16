@@ -1,18 +1,23 @@
 # DogApp
 
-[Live Demo](http://test13378.futurehost.pl/dogapp/)
+Dog search by breed name. Uses [Dog API](https://dog.ceo/).
+
+## [Live Demo](http://test13378.futurehost.pl/dogapp/)
 
 ## Install dependencies
+
 ```
 yarn install
 ```
 
 ## Develop
+
 ```
 yarn start
 ```
 
 ## Build
+
 ```
 yarn build
 ```
