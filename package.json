@@ -1,0 +1,32 @@
+{
+  "name": "dogapp",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "person": "Alex Ilchenko <ilczenko@gmail.com>",
+  "devDependencies": {
+    "react-scripts": "1.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "element-resize-event": "^2.0.9",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.11.2",
+    "immer": "^0.7.0",
+    "lerp": "^1.0.3",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-virtualized": "^9.17.2",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
