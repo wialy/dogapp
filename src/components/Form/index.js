@@ -34,10 +34,10 @@ class Form extends React.Component {
         <Input
           value={query}
           onChange={onChange}
-          onKeyPress={this.onKeyPress}
+          onKeyPress={enabled ? this.onKeyPress : void 0}
           placeholder={'Breed name'}
         />
-        <Button onClick={onSubmit}>Search</Button>
+        <Button onClick={enabled ? onSubmit : void 0}>Search</Button>
       </Div>
     )
   }

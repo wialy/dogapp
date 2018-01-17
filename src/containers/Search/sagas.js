@@ -1,9 +1,18 @@
 import { select, call, put, takeLatest } from 'redux-saga/effects'
 import axios from 'axios'
 
-const search = breed =>
+const search = query =>
   axios
-    .get(`https://dog.ceo/api/breed/${breed.toLowerCase()}/images`)
+    .get(
+      `https://dog.ceo/api/breed/${query
+        .toLowerCase()
+        .trim()
+        .replace(/\s\s+/g, ' ')
+        .split(' ')
+        .slice(0, 2)
+        .filter(s => !!s)
+        .join('/')}/images`
+    )
     .then(response => response.data)
 
 const getQuery = state => state.search.query

@@ -35,7 +35,6 @@ const Modal = glamorous.div(
     padding: 15,
     flex: 1,
     maxHeight: '80%',
-    borderRadius: '4px',
     display: 'flex',
     flexDirection: 'column'
   },
